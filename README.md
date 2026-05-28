@@ -23,14 +23,14 @@ This diagram shows the browser frontend calling server functions that interact w
 ```mermaid
 flowchart LR
   subgraph FE [Frontend]
-    A[Browser (Lovable + React)] -->|RPC / REST| B[Server (Edge / Node)]
+    A["Browser (Lovable + React)"] -->|RPC / REST| B["Server (Edge / Node)"]
   end
   subgraph BE [Backend / Services]
-    B --> C[Supabase (Auth, DB, Storage)]
-    B --> D[Dify (LLM + KYC workflows)]
+    B --> C["Supabase (Auth, DB, Storage)"]
+    B --> D["Dify (LLM + KYC workflows)"]
   end
-  C --> E[Database / Migrations]
-  D --> F[Model APIs / LLM pipelines]
+  C --> E["Database / Migrations"]
+  D --> F["Model APIs / LLM pipelines"]
   style FE fill:#f9f,stroke:#333,stroke-width:1px
   style BE fill:#ff9,stroke:#333,stroke-width:1px
 ```
