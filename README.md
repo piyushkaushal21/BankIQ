@@ -102,6 +102,10 @@ Examples:
 - ![Login screenshot](Screenshots/1.%20BankIQ_Lovable%20Client%20login-page_screenshot1.png)
 - ![Dashboard](Screenshots/2.%20BankIQ_Client%20login-page_screenshot2.png)
 
+Project explainer images are also available at the repository root:
+- ![Project explainer image1](./Project%20explainer%20image1.png)
+- ![Project explainer image2](./Project%20explainer%20image2.png)
+
 GIF demos
 - Add animated walkthrough GIFs to `docs/gifs/` and reference them here:
 
