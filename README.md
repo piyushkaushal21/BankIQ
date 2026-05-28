@@ -143,8 +143,8 @@ To deploy:
 
 ## Creator
 
-- Creator: Your Name — contact@example.com
-- Repo: Replace with your public repo URL
+- Creator: Piyush Kaushal — piyushkaushal21@gmail.com
+- Repo: https://github.com/piyushkaushal21/BankIQ
 
 ## License
 
