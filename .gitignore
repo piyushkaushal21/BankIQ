@@ -1,0 +1,19 @@
+node_modules/
+dist/
+build/
+.env
+.env.*
+Frontend/.env
+.DS_Store
+.idea/
+.vscode/
+*.log
+coverage/
+/.next/
+/.vercel/
+/.turbo/
+*.sqlite
+npm-debug.log*
+yarn-error.log*
+# bun lock is typically committed, but ignore local caches
+/.bun/
