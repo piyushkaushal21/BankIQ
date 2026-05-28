@@ -1,0 +1,117 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-accent: var(--primary-accent);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.75rem;
+  /* BankIQ — Axis Bank palette */
+  --background: oklch(0.98 0.012 5);                /* #FDF2F6 light pink */
+  --foreground: oklch(0.20 0.03 280);               /* #1A1A2E */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.20 0.03 280);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.20 0.03 280);
+  --primary: oklch(0.40 0.16 0);                    /* #97144D burgundy */
+  --primary-foreground: oklch(0.99 0.005 0);
+  --primary-dark: oklch(0.30 0.13 0);               /* #5B0E2D */
+  --primary-accent: oklch(0.46 0.18 0);             /* #C41E5E */
+  --secondary: oklch(0.96 0.02 5);
+  --secondary-foreground: oklch(0.30 0.13 0);
+  --muted: oklch(0.96 0.015 5);
+  --muted-foreground: oklch(0.50 0.03 5);
+  --accent: oklch(0.94 0.04 5);
+  --accent-foreground: oklch(0.30 0.13 0);
+  --destructive: oklch(0.6 0.235 27);
+  --destructive-foreground: oklch(0.99 0.005 250);
+  --border: oklch(0.90 0.02 5);
+  --input: oklch(0.90 0.02 5);
+  --ring: oklch(0.40 0.16 0);
+  --sidebar: oklch(0.30 0.13 0);                    /* #5B0E2D */
+  --sidebar-foreground: oklch(0.98 0.005 0);
+  --sidebar-primary: oklch(0.40 0.16 0);
+  --sidebar-primary-foreground: oklch(0.99 0.005 0);
+  --sidebar-accent: oklch(0.36 0.14 0);
+  --sidebar-accent-foreground: oklch(0.98 0.005 0);
+  --sidebar-border: oklch(0.36 0.10 0);
+  --sidebar-ring: oklch(0.46 0.18 0);
+}
+
+.dark {
+  --background: oklch(0.18 0.02 280);
+  --foreground: oklch(0.97 0.005 0);
+  --card: oklch(0.22 0.025 280);
+  --card-foreground: oklch(0.97 0.005 0);
+  --popover: oklch(0.22 0.025 280);
+  --popover-foreground: oklch(0.97 0.005 0);
+  --primary: oklch(0.46 0.18 0);
+  --primary-foreground: oklch(0.99 0.005 0);
+  --primary-dark: oklch(0.30 0.13 0);
+  --primary-accent: oklch(0.55 0.20 0);
+  --secondary: oklch(0.27 0.03 280);
+  --secondary-foreground: oklch(0.97 0.005 0);
+  --muted: oklch(0.27 0.03 280);
+  --muted-foreground: oklch(0.7 0.02 5);
+  --accent: oklch(0.32 0.06 0);
+  --accent-foreground: oklch(0.97 0.005 0);
+  --destructive: oklch(0.65 0.22 22);
+  --destructive-foreground: oklch(0.99 0.005 0);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.46 0.18 0);
+  --sidebar: oklch(0.22 0.06 0);
+  --sidebar-foreground: oklch(0.97 0.005 0);
+  --sidebar-primary: oklch(0.46 0.18 0);
+  --sidebar-primary-foreground: oklch(0.99 0.005 0);
+  --sidebar-accent: oklch(0.30 0.10 0);
+  --sidebar-accent-foreground: oklch(0.97 0.005 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.46 0.18 0);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-feature-settings: "cv11", "ss01";
+  }
+}
