@@ -14,6 +14,11 @@ BankIQ is a portfolio-grade AI SaaS demo that showcases conversational AI, KYC c
 - BankIQ demonstrates how to glue authentication, storage, and LLMs into a secure, developer-friendly stack.
 
 ## Solution Architecture
+Below is an embedded architecture diagram (repo-hosted SVG) for guaranteed visibility on GitHub. The Mermaid source remains after it for maintainers who prefer the text diagram.
+
+![Architecture Diagram](docs/diagrams/architecture.svg)
+
+This diagram shows the browser frontend calling server functions that interact with Supabase for auth and persistence, and Dify for LLM/AI workloads.
 
 ```mermaid
 flowchart LR
@@ -29,8 +34,6 @@ flowchart LR
   style FE fill:#f9f,stroke:#333,stroke-width:1px
   style BE fill:#ff9,stroke:#333,stroke-width:1px
 ```
-
-This diagram shows the browser frontend calling server functions that interact with Supabase for auth and persistence, and Dify for LLM/AI workloads.
 
 ## Features ✨
 
