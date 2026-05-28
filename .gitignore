@@ -1,8 +1,10 @@
 node_modules/
 dist/
 build/
+# Ignore local env files but allow committed examples
 .env
-.env.*
+.env.local
+.env.*.local
 Frontend/.env
 .DS_Store
 .idea/
@@ -17,3 +19,4 @@ npm-debug.log*
 yarn-error.log*
 # bun lock is typically committed, but ignore local caches
 /.bun/
+Frontend/.workspace/
