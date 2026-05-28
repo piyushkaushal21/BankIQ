@@ -6,7 +6,7 @@
 
 ## Product Overview
 
-BankIQ is a portfolio-grade AI SaaS demo that showcases conversational AI, KYC checks, and knowledgebase-driven responses for banking applications. It pairs a Vite + TypeScript frontend with Supabase for auth & persistence and Dify for LLM-powered features.
+BankIQ is a portfolio-grade AI SaaS demo that showcases conversational AI, KYC checks, and knowledgebase-driven responses for banking applications. It pairs a Lovable-powered TypeScript frontend with Supabase for auth & persistence and Dify for LLM-powered features.
 
 ## Problem Solved
 
@@ -18,7 +18,7 @@ BankIQ is a portfolio-grade AI SaaS demo that showcases conversational AI, KYC c
 ```mermaid
 flowchart LR
   subgraph FE [Frontend]
-    A[Browser (React / Vite)] -->|RPC / REST| B[Server (Edge / Node)]
+    A[Browser (Lovable + React)] -->|RPC / REST| B[Server (Edge / Node)]
   end
   subgraph BE [Backend / Services]
     B --> C[Supabase (Auth, DB, Storage)]
@@ -49,7 +49,7 @@ This diagram shows the browser frontend calling server functions that interact w
 
 ## Tech Stack
 
-- Frontend: TypeScript, React, Vite
+- Frontend: Lovable, TypeScript, React
 - Backend: Edge/Node server functions (project sources in `Frontend/src/server.ts`)
 - Auth & DB: Supabase (see `Frontend/supabase/`)
 - LLM / AI: Dify (see `Frontend/src/lib/dify.functions.ts`)
