@@ -104,6 +104,7 @@ Included in the repo: see the `Screenshots/` folder for static images of the UI 
 Examples:
 - ![Login screenshot](Screenshots/1.%20BankIQ_Lovable%20Client%20login-page_screenshot1.png)
 - ![Dashboard](Screenshots/2.%20BankIQ_Client%20login-page_screenshot2.png)
+- ![Chat window screenshot](Screenshots/5.%20BankIQ_chat-window_screenshot5.png)
 
 Project explainer images are also available at the repository root:
 - ![Project explainer image1](./Project%20explainer%20image1.png)
