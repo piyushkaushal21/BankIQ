@@ -125,7 +125,7 @@ Included above (Mermaid) — you can render it on GitHub or via Mermaid live edi
 
 Add your deployment URLs here once deployed. Example placeholders:
 
-- Staging: https://bankiq-staging.example.com
+- Staging: https://bankiq-currentaccount.lovable.app
 - Production: https://bankiq.example.com
 
 To deploy:
